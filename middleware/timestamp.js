@@ -3,7 +3,7 @@
 function timestamp(req, res, next) {
   const currentDate = new Date();
   const cuurentTimestamp = currentDate.toLocaleDateString();
-  req.requestTime = currentDate;
+  req.requestTime = cuurentTimestamp;
   next();
 }
 
